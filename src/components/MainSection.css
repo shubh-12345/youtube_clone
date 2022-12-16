@@ -1,0 +1,62 @@
+.section-container{
+    top: 75px;
+    position:absolute;
+    left: 100px;
+}
+.section-container ul{
+    display: flex;
+}
+
+.section-container ul li{
+    list-style: none;
+    margin-right:27px;
+    border: 0px solid;
+    padding: 5px 9px;
+    border-radius: 12px;
+    background-color: #0000000d;
+}
+
+.section-container ul li:hover{
+    background-color: #00000014;
+    cursor: pointer;
+}
+
+
+.video-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    
+}
+
+.section-container-toggle{
+    left:196px;
+}
+
+.section-container-toggle ul li{
+    margin-right:21px;
+}
+
+.sec-navbar ul{
+    width: 100%;
+    background-color: white;
+    padding: 12px 5px;
+    position: fixed;
+    top:7%;
+}
+.sec-navbar{
+    margin-bottom: 40px;
+    background-color: white;
+}
+.sec-nav-link{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+
+

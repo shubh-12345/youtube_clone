@@ -1,0 +1,53 @@
+
+.frame-container{
+    margin-bottom: 35px;
+}
+
+.frame{
+    border: 0px;
+    border-radius: 14px;
+    height: 171px;
+    width: 286px;
+    margin: 10px 11px;
+}
+
+.video-text{
+    text-align: left;
+    display: table-caption;
+    width: 278px;
+    overflow-wrap: break-word;
+    color: black;
+    margin-left: 12px;
+}
+
+.frame-toggle{
+    margin:10px 0px;
+    width: 257px;
+    height: 153px;
+} 
+
+.channelimg img{
+    height: 31px;
+    width: 32px;
+    border: 0px;
+    border-radius: 20px;
+    display: block;
+    float: left;
+    margin-right: 8px;
+}
+.channelimg{
+    height:40px;
+    display: inline;
+}
+
+.video-text-toggle{
+    width: 263px;
+}
+.video-title-toggle{
+    width: 211px;
+    float: left;
+}
+.video-title{
+    float: right;
+    width: 232px;
+}
