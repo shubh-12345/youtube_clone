@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <>
-    <Navbar key='trending' category='trending'/>
+   
       <BrowserRouter>
       <Routes>
         <Route  path="/" element={<Navbar key='trending' category='trending'/>}/>
