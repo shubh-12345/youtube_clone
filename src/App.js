@@ -7,7 +7,7 @@ function App() {
   return (
     <>
    
-      <BrowserRouter>
+      <HashRouter>
       <Routes>
         <Route  path="/" element={<Navbar key='trending' category='trending'/>}/>
           <Route  index element={<Navbar key='trending' category='trending' />} />
@@ -25,7 +25,7 @@ function App() {
           
       
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
       
     </>
   );
