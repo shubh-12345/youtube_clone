@@ -6,6 +6,10 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <>
+<<<<<<< HEAD
+=======
+   
+>>>>>>> origin/master
       <HashRouter>
       <Routes>
         <Route  path="/" element={<Navbar key='trending' category='trending'/>}/>
