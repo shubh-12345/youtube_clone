@@ -1,12 +1,12 @@
 import './App.css';
 import Navbar from './components/Navbar';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
       <Routes>
         <Route  path="/" element={<Navbar key='trending' category='trending'/>}/>
           <Route  index element={<Navbar key='trending' category='trending' />} />
@@ -24,7 +24,7 @@ function App() {
           
       
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
       
     </>
   );
