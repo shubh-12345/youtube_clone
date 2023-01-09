@@ -2,29 +2,26 @@ import { useState,useEffect } from 'react';
 import './AsideBar.css'
 
 const AsideBar = (props) => {
-  const [click1,setCLick1]=useState(false);
-    useEffect(()=>{
-        setCLick1(props.click)
-    },[props])
+  
   
   return (
-    <div className={`aside-container ${click1===true?'aside-container-toggle':``}`} >
+    <div className={`aside-container`} >
       <ul>
-        <li><div className={`aside-bar-items ${click1===true?'aside-bar-items-toggle':''}`}>
-          <div className={click1===true?'aside-bar-icons-toggle':''}><i className="fa-solid fa-house"></i></div>
-          <div className={`aside-bar-item-text ${click1===true?'aside-bar-item-text-toggle':''}`}>Home</div>
+        <li><div className={`aside-bar-items `}>
+          <div ><i className="fa-solid fa-house"></i></div>
+          <div className={`aside-bar-item-text `}>Home</div>
         </div>
         </li>
 
-        <li><div className={`aside-bar-items ${click1===true?'aside-bar-items-toggle':''}`}>
-          <div className={click1===true?'aside-bar-icons-toggle':''}><i className="fa-solid fa-s"></i></div>
-          <div className={`aside-bar-item-text ${click1===true?'aside-bar-item-text-toggle':''}`}>Shorts</div>
+        <li><div className={`aside-bar-items `}>
+          <div ><i className="fa-solid fa-s"></i></div>
+          <div className={`aside-bar-item-text`}>Shorts</div>
         </div>
         </li>
 
-        <li><div className={`aside-bar-items ${click1===true?'aside-bar-items-toggle':''}`}>
-          <div className={click1===true?'aside-bar-icons-toggle':''}><i className="fa-solid fa-layer-group"></i></div>
-          <div className={`aside-bar-item-text ${click1===true?'aside-bar-item-text-toggle':''}`}>Subscriptions</div>
+        <li><div className={`aside-bar-items `}>
+          <div ><i className="fa-solid fa-layer-group"></i></div>
+          <div className={`aside-bar-item-text `}>Subscriptions</div>
         </div>
         </li>
       </ul>

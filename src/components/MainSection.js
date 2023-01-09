@@ -5,17 +5,14 @@ import { Link } from 'react-router-dom';
 import LoadingBar from 'react-top-loading-bar'
 
 const MainSection = (props) => {
-    const [click1,setCLick1]=useState(false);
+    
     const [video,setVideos]=useState([]);
     const [progress, setProgress] = useState(0)
     
     const apiKey=process.env.REACT_APP_API_KEY
     
 
-    useEffect(()=>{
-        setCLick1(props.click)
-    },[props.click])
-
+   
     
 
     useEffect(()=>{
@@ -40,7 +37,7 @@ const MainSection = (props) => {
                 progress={progress}
                 onLoaderFinished={() => setProgress(0)}
             />
-        <div className={`section-container ${click1?'section-container-toggle':''}`}>
+        <div className={`section-container `}>
             
             <nav className='sec-navbar'>
                 <ul>
@@ -62,7 +59,7 @@ const MainSection = (props) => {
             <div className='video-section'>
 
                 {video && video.map((element)=>{
-                    return <VideoCard click={click1} src={element.id.videoId} title={element.snippet.title} channelid={element.snippet.channelId} />
+                    return <VideoCard  src={element.id.videoId} title={element.snippet.title} channelid={element.snippet.channelId} />
                 })}
 
                 

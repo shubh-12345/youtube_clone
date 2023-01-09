@@ -5,17 +5,14 @@ import './Navbar.css'
 
 
 const Navbar = (props) => {
-    const [click, onClick] = useState(false)
+
     const [search, setSearch] = useState("")
-    
 
 
 
 
-    const handleClick = () => {
-        onClick(!click)
 
-    }
+
     const getInputValue = () => {
         console.log(document.getElementById('inputField').value)
         setSearch(document.getElementById('inputField').value)
@@ -26,10 +23,10 @@ const Navbar = (props) => {
     }
     return (
         <>
-            
+
             <nav className="navbar">
                 <div className="navbar-container">
-                    <button className='nav-item bars bars-btn' onClick={handleClick}><i className="fa-solid fa-bars"></i></button>
+                    <button className='nav-item bars bars-btn' ><i className="fa-solid fa-bars"></i></button>
                     <div className="logo"><img src={require('../images/logo2.jpg')} alt="logo" /></div>
 
                     <form onSubmit={handleSubmit}>
@@ -45,8 +42,8 @@ const Navbar = (props) => {
 
                 </div>
             </nav>
-            <AsideBar click={click} />
-            <MainSection click={click} search={search} category={props.category} />
+            <AsideBar />
+            <MainSection search={search} category={props.category} />
         </>
     )
 }
